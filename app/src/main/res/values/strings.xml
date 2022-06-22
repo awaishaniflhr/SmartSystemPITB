@@ -4,4 +4,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome_home_n_alex">Welcome\nHome, Alex</string>
     <string name="rooms">Rooms</string>
+    <string name="living_room">Living room</string>
+    <string name="bedroom">Bedroom</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="bathroom">Bathroom</string>
+    <string name="smart_system">Smart system</string>
 </resources>

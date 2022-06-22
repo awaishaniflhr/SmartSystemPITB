@@ -1,83 +1,243 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="match_parent"
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
 <RelativeLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="30dp"
     android:background="@color/layout_background"
-    tools:context=".MainActivity">
+    android:layout_gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:weightSum="1"
+    android:orientation="horizontal">
 
     <TextView
+        android:id="@+id/welcomTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/welcomTxt"
+        android:layout_alignParentStart="true"
+        android:lineHeight="30dp"
         android:text="@string/welcome_home_n_alex"
         android:textColor="@color/dark_gray"
-        android:layout_alignParentStart="true"
         android:textSize="22sp"
-        android:lineHeight="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <ImageView
+        android:id="@+id/profileimg"
         android:layout_width="70dp"
-        android:layout_height="70dp"
         android:layout_alignParentEnd="true"
+        android:layout_height="70dp"
         android:background="@drawable/profile" />
+
     <TextView
+        android:id="@+id/room"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/room"
         android:layout_below="@+id/welcomTxt"
         android:layout_marginTop="40dp"
         android:text="@string/rooms"
         android:textColor="@color/dark_gray"
         android:textSize="22sp"
-        android:textStyle="normal"/>
+        android:textStyle="normal" />
 
     <LinearLayout
-        android:id="@+id/services"
+        android:id="@+id/txtroom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/room"
-        android:layout_marginTop="15dp">
+        android:layout_below="@+id/room"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+
+            <RelativeLayout
+                android:id="@+id/services"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/services_radius">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/livingroom">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/services"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/living_room"
+                android:textColor="@color/dark_gray"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+
+            <RelativeLayout
+                android:id="@+id/services"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/services_radius">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bedroom">
+                </ImageView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/services"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/bedroom"
+                android:textColor="@color/dark_gray"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+
+            <RelativeLayout
+                android:id="@+id/services"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/services_radius">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/kitchen">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/services"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/kitchen"
+                android:textColor="@color/dark_gray"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+
+            <RelativeLayout
+                android:id="@+id/services"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/services_radius">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bathroom">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/services"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/bathroom"
+                android:textColor="@color/dark_gray"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+
+            <RelativeLayout
+                android:id="@+id/services"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/services_radius">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/livingroom">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/services"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/living_room"
+                android:textColor="@color/dark_gray"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
 
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/livingroom" />
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/bedroom" />
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/kitchen" />
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/bathroom" />
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/livingroom" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/smart_systemtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtroom"
+        android:layout_marginTop="40dp"
+        android:text="@string/smart_system"
+        android:textColor="@color/dark_gray"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/system"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/smart_systemtxt">
+
+    </GridLayout>
+
 
 </RelativeLayout>
 </ScrollView>
