@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="dark_gray">#341a3f</color>
+    <color name="layout_background">#f1f7fe</color>
+    <color name="tv_background">#e9d7ff</color>
+    <color name="airconditioner_background">#d9eeff</color>
+    <color name="audiosystem_background">#ffe28b</color>
+    <color name="heatingsystem_background">#ffd9d3</color>
+    <color name="btn_darkgray">#2e133a</color>
 </resources>
