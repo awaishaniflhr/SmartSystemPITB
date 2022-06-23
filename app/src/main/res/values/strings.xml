@@ -17,6 +17,7 @@
     <string name="no_active_devices">No active devices</string>
     <string name="home">Home</string>
     <string name="welcom_to_second_fragment">Welcom to \nSecond Fragment</string>
-    <string name="welcome_nsetting_alex">Welcome\nSetting Alex</string>
-    <string name="welcome_n_group_alex">Welcome\n Group Alex</string>
+    <string name="welcome_nsetting_alex">Welcome Setting Alex</string>
+    <string name="welcome_group_alex">Welcome Group Alex</string>
+    <string name="welcome_setting_alex">Welcome Setting Alex</string>
 </resources>
