@@ -9,4 +9,11 @@
     <string name="kitchen">Kitchen</string>
     <string name="bathroom">Bathroom</string>
     <string name="smart_system">Smart system</string>
+    <string name="smart_systems">Smart systems</string>
+    <string name="smart_tv">Smart TV</string>
+    <string name="_2_active_devices">2 Active devices</string>
+    <string name="air_conditioner">Air Conditioner</string>
+    <string name="_1_active_devices">1 Active devices</string>
+    <string name="no_active_devices">No active devices</string>
+    <string name="home">Home</string>
 </resources>
