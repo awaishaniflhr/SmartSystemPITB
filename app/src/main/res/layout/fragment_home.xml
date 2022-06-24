@@ -14,10 +14,9 @@
         android:layout_gravity="center_horizontal"
         android:weightSum="1"
         android:layout_marginBottom="30dp"
-        android:orientation="horizontal"
         tools:context=".Home">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- TODO: Home Fragment layout -->
         <TextView
             android:id="@+id/welcomTxt"
             android:layout_width="wrap_content"
@@ -79,20 +78,19 @@
                         android:layout_marginEnd="20dp"
                         android:orientation="vertical">
                         <androidx.cardview.widget.CardView
-                            android:layout_width="90dp"
-                            android:layout_height="90dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             app:cardCornerRadius="30dp"
                             android:foreground="@drawable/cardview_hover"
                             android:clickable="true"
                             android:longClickable="true"
-
                             android:focusable="true"
-                            app:cardElevation="10dp">
+                            app:cardElevation="5dp">
 
 
                             <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="15dp"
                                 android:background="@drawable/livingroom">
@@ -119,15 +117,15 @@
                         android:layout_marginEnd="20dp"
                         android:orientation="vertical">
                         <androidx.cardview.widget.CardView
-                            android:layout_width="90dp"
-                            android:layout_height="90dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             app:cardCornerRadius="30dp"
-                            app:cardElevation="10dp">
+                            app:cardElevation="5dp">
 
 
                             <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="25dp"
                                 android:background="@drawable/bedroom">
@@ -154,16 +152,15 @@
                         android:layout_marginEnd="20dp"
                         android:orientation="vertical">
                         <androidx.cardview.widget.CardView
-                            android:layout_width="90dp"
-                            android:layout_height="90dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             app:cardCornerRadius="30dp"
-
-                            app:cardElevation="10dp">
+                            app:cardElevation="5dp">
 
 
                             <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="23dp"
                                 android:background="@drawable/kitchen">
@@ -189,15 +186,15 @@
                         android:layout_marginEnd="20dp"
                         android:orientation="vertical">
                         <androidx.cardview.widget.CardView
-                            android:layout_width="90dp"
-                            android:layout_height="90dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             app:cardCornerRadius="30dp"
-                            app:cardElevation="10dp">
+                            app:cardElevation="5dp">
 
 
                             <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="20dp"
                                 android:background="@drawable/bathroom">
@@ -224,16 +221,16 @@
                         android:layout_marginEnd="20dp"
                         android:orientation="vertical">
                         <androidx.cardview.widget.CardView
-                            android:layout_width="90dp"
-                            android:layout_height="90dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             app:cardCornerRadius="30dp"
 
-                            app:cardElevation="10dp">
+                            app:cardElevation="5dp">
 
 
                             <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="15dp"
                                 android:background="@drawable/livingroom">
@@ -273,12 +270,19 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:id="@+id/smart_system1"
+            android:weightSum="2"
             android:layout_below="@id/smartsystem_txt"
             android:layout_marginTop="10dp">
             <RelativeLayout
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingBottom="30dp"
+
                 android:id="@+id/smart_tv"
                 android:background="@drawable/services_radius">
 
@@ -297,7 +301,6 @@
                     android:layout_marginEnd="10dp"
                     android:thumbTint="@color/white"
                     android:checked="true"
-
                     tools:ignore="UseSwitchCompatOrMaterialXml" />
 
                 <TextView
@@ -306,27 +309,34 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/img_tv"
                     android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:text="@string/smart_tv"
                     android:textColor="@color/btn_darkgray"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tv_txt_detail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv_txt"
-                    android:text="@string/_2_active_devices"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="5dp"
+                    android:text="@string/_2_active_devices"
                     android:textColor="@color/btn_darkgray"
                     android:textSize="14sp"
                     android:textStyle="normal" />
 
             </RelativeLayout>
             <RelativeLayout
-                android:layout_width="170dp"
-                android:layout_height="170dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingBottom="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
                 android:background="@drawable/air_radius">
 
                 <ImageView
@@ -353,7 +363,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/air_img"
                     android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:text="@string/air_conditioner"
                     android:textColor="@color/btn_darkgray"
                     android:textSize="18sp"
@@ -381,11 +391,17 @@
             android:id="@+id/smart_system2"
             android:layout_marginBottom="50dp"
             android:layout_below="@id/smart_system1"
+            android:weightSum="2"
             android:layout_marginTop="10dp">
             <RelativeLayout
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingBottom="30dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/tv_radius">
 
                 <ImageView
@@ -412,7 +428,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/img_audio"
                     android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:text="@string/smart_tv"
                     android:textColor="@color/btn_darkgray"
                     android:textSize="18sp"
@@ -432,8 +448,14 @@
 
             </RelativeLayout>
             <RelativeLayout
-                android:layout_width="170dp"
-                android:layout_height="170dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingBottom="30dp"
+                android:layout_marginStart="5dp"
                 android:background="@drawable/heating_radius">
 
                 <ImageView
@@ -459,9 +481,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/img_heating"
-                    android:text="@string/smart_tv"
                     android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/smart_tv"
                     android:textColor="@color/btn_darkgray"
                     android:textSize="18sp"
                     android:textStyle="bold" />

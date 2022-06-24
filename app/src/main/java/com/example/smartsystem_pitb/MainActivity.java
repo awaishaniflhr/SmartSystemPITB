@@ -15,11 +15,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 //        Start code for button fragment_home
+        FragmentManager fragmentManager = getSupportFragmentManager();
         Button btnhome = findViewById(R.id.btnhome);
         btnhome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentManager fragmentManager = getSupportFragmentManager();
+
                 fragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainerView2, HomeFragment.class, null)
                         .setReorderingAllowed(true)
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btngroup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentManager fragmentManager = getSupportFragmentManager();
+
                 fragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainerView2, GroupFragment.class, null)
                         .setReorderingAllowed(true)
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         btnsetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentManager fragmentManager = getSupportFragmentManager();
+
                 fragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainerView2, SettingFragment.class, null)
                         .setReorderingAllowed(true)
