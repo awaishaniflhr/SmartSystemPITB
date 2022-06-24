@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainerView2, GroupFragment.class, null)
                         .setReorderingAllowed(true)
-                        .addToBackStack("name")
+                        .addToBackStack("none")
                         .commit();
             }
         });
