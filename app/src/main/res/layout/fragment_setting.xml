@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/teal_700"
-        android:padding="10dp"
         android:layout_gravity="center_horizontal"
         android:weightSum="1"
         android:layout_marginBottom="30dp"
@@ -44,8 +43,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/welcomTxt"
-            android:layout_marginTop="40dp"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
             android:text="@string/rooms"
             android:textColor="@color/dark_gray"
             android:textSize="22sp"
@@ -68,14 +67,14 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="5dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
-                        android:layout_marginEnd="20dp"
+                        android:layout_marginEnd="10dp"
                         android:orientation="vertical">
                         <androidx.cardview.widget.CardView
                             android:layout_width="80dp"
@@ -87,7 +86,6 @@
                             android:focusable="true"
                             app:cardElevation="5dp">
 
-
                             <ImageView
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
@@ -95,8 +93,6 @@
                                 android:layout_marginTop="15dp"
                                 android:background="@drawable/livingroom">
                             </ImageView>
-
-
 
                         </androidx.cardview.widget.CardView>
                         <TextView
@@ -114,12 +110,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
-                        android:layout_marginEnd="20dp"
+                        android:layout_marginEnd="10dp"
                         android:orientation="vertical">
                         <androidx.cardview.widget.CardView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             app:cardCornerRadius="30dp"
+                            android:clickable="true"
+                            android:longClickable="true"
+                            android:focusable="true"
                             app:cardElevation="5dp">
 
 
@@ -149,12 +148,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
-                        android:layout_marginEnd="20dp"
+                        android:layout_marginEnd="10dp"
                         android:orientation="vertical">
                         <androidx.cardview.widget.CardView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             app:cardCornerRadius="30dp"
+                            android:clickable="true"
+                            android:longClickable="true"
+                            android:focusable="true"
                             app:cardElevation="5dp">
 
 
@@ -183,12 +185,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
-                        android:layout_marginEnd="20dp"
+                        android:layout_marginEnd="10dp"
                         android:orientation="vertical">
                         <androidx.cardview.widget.CardView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             app:cardCornerRadius="30dp"
+                            android:clickable="true"
+                            android:longClickable="true"
+                            android:focusable="true"
                             app:cardElevation="5dp">
 
 
@@ -218,13 +223,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
-                        android:layout_marginEnd="20dp"
+                        android:layout_marginEnd="10dp"
                         android:orientation="vertical">
                         <androidx.cardview.widget.CardView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             app:cardCornerRadius="30dp"
-
+                            android:clickable="true"
+                            android:longClickable="true"
+                            android:focusable="true"
                             app:cardElevation="5dp">
 
 
@@ -260,6 +267,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtroom"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="40dp"
             android:text="@string/smart_systems"
             android:textColor="@color/dark_gray"
@@ -270,6 +278,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:id="@+id/smart_system1"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:weightSum="2"
             android:layout_below="@id/smartsystem_txt"
             android:layout_marginTop="10dp">
@@ -390,6 +400,8 @@
             android:orientation="horizontal"
             android:id="@+id/smart_system2"
             android:layout_marginBottom="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_below="@id/smart_system1"
             android:weightSum="2"
             android:layout_marginTop="10dp">
